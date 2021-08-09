@@ -7,10 +7,11 @@ Fake Review Detection
 
 ### Introduction
 
-![](Image/Introduction_image.jpg "Title")
-
 
 Modern people tend to read reviews before buying products or services for smart and wise spending in addition to information provided by businesses. But there are some cases where businesses intentionally don't provide consumers with information on downside of their products/services, or even make false and exaggerated advertisements in order to maximize their profits. For that reason, consumers don't accept the information unconditionally. However, they can obtain more accurate information from other consumers who have already used the services/products that they are interested in buying. So, direct evaluations from customers can give potential customers more credit. Therefore, according to this article [10 ONLINE REVIEW STATISTICS YOU NEED TO KNOW IN 2021](https://www.oberlo.com/blog/online-review-statistics) from Oberlo, "56 percent of consumers read at least four reviews before buying a product."
+
+![](Image/Introduction_image.jpg "Title")
+
 
 However, the number of cases where online reviews are abused is rapidly increasing. Some review writers leave false reviews so that consumers can't determine precisely. There are mainly two types of false reviews. First, malicious reviews written by rival businesses. By producing rumors through negative groundless reviews, they make negative public perceptions towards the business which, in turn, directly affects the business operation. According to an article [How Harmful Are Fake Online Reviews](https://www.business2community.com/infographics/how-harmful-are-fake-online-reviews-infographic-02316083) from Business 2 Community, a business "risks losing 22% of their online business if just one negative review is discovered by shoppers who are considering purchasing your product. If a business happens to have 3 negative reviews, they risk losing 59% of customers." Therefore, such fake reviews can be fatal to businesses. Second, overly exaggerated reviews left by business owners or people hired by the owners. By writing overly positive reviews that are not true in order to present a good image, they can give false positive perceptions to customers and attract them. But customers can get services/products that fall short of their expectations. In other words, both of the two types can cause harm to either businesses or customers by giving false information. For these reasons, filtering fake reviews to protect them is socially and economically very important. 
 
