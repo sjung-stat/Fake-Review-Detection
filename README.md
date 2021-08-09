@@ -43,7 +43,7 @@ The dataset, which was scraped from Yelp, is consisted of approximately 27,000 r
 - __[Feature Engineering](https://github.com/sjung-stat/Fake-Review-Detection/blob/main/Feature_Engineering_and_Model_Building.ipynb)__: In this section, new features are created using the existing features to increase the accuracy of classifiers. For instance, it calculates the number of words and uppercase letters in the review contents. And it performs sentiment analysis (NLP technique) to obtain polarity and subjectivity scores. 
 
 
-- __[Model Building](https://github.com/sjung-stat/Fake-Review-Detection/blob/main/Feature_Engineering_and_Model_Building.ipynb)__: Raw text data are used to build a classifier using NLP and Deep Learning techniques (CNN, LSTM). In addition, several machine learning algorithms are implemented based on other categorical and numerical attributes; XGBoost, Random Forest, Neural Network, Support Vector Machine, Logistic Regression, KNN. Accuracy, sensitivity, and specificity are used to measure the performance of each classifier. And three models are further developed by tuning hyperparameters to produce a better result.
+- __[Model Building](https://github.com/sjung-stat/Fake-Review-Detection/blob/main/Feature_Engineering_and_Model_Building.ipynb)__: Raw text data are used to build a classifier using NLP and Deep Learning techniques (CNN, LSTM). In addition, several machine learning algorithms are implemented based on other categorical and numerical attributes; XGBoost, Random Forest, Neural Network, Support Vector Machine, Logistic Regression, KNN. Accuracy, precision, and recall are used to measure the performance of each classifier. And three models are further developed by tuning hyperparameters to produce a better result.
 
 
 -----
