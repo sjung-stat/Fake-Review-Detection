@@ -43,7 +43,7 @@ The dataset, which was scraped from Yelp, is consisted of approximately 27,000 r
 - __[Feature Engineering](https://github.com/sjung-stat/Fake-Review-Detection/blob/main/Feature_Engineering_and_Model_Building.ipynb)__: In this section, new features are created using the existing features to increase the accuracy of classifiers. For instance, it calculates the number of words and uppercase letters in the review contents. And it performs sentiment analysis (NLP technique) to obtain polarity and subjectivity scores. 
 
 
-- __[Model Building](https://github.com/sjung-stat/Fake-Review-Detection/blob/main/Feature_Engineering_and_Model_Building.ipynb)__: Raw text data are used to build a classifier using NLP and Deep Learning techniques (CNN, LSTM). In addition, several machine learning algorithms are implemented based on other categorical and numerical attributes; XGBoost, Random Forest, Neural Network, Support Vector Machine, Logistic Regression, KNN. Accuracy, precision, and recall are used to measure the performance of each classifier. And three models are further developed by tuning hyperparameters to produce a better result.
+- __[Model Building](https://github.com/sjung-stat/Fake-Review-Detection/blob/main/Feature_Engineering_and_Model_Building.ipynb)__: Raw text data are used to build a classifier using NLP and Deep Learning techniques (CNN, LSTM). In addition, several machine learning algorithms are implemented based on other categorical and numerical attributes; XGBoost, Random Forest, Neural Network, Logistic Regression, Support Vector Machine, and SGD Classifier. Accuracy, precision, and recall are used to measure the performance of each classifier. And three models are further developed by tuning hyperparameters to produce a better result. Lastly, some best models are combined using soft voting method. 
 
 
 -----
@@ -53,19 +53,25 @@ The dataset, which was scraped from Yelp, is consisted of approximately 27,000 r
 A total of 6 classifiers are built as mentioned in the __Model Building__ subsection above. The following is the summary of the classification results based on 10-fold cross validations:
 
 - XGBoost (Accuracy: 90.5% / Precision: 80.1% / Recall: 77.8%)
-- Random Forest (Accuracy: 88.3% / Precision: 78.1% / Recall: 67.8%)
-- Neural Networks (Accuracy: 87.3% / Precision: 72.9% / Recall: 70.1%)
-- Logistic Regression (Accuracy: 84.9% / Precision: 70.7% / Recall: 58.7%)
-- Support Vector Machine (Accuracy: 82.8% / Precision: 71.2% / Recall: 42.7%)
-- SGD Classifier (Accuracy: 82.5% / Precision: 67.2% / Recall: 46.8%)
-- KNN (Accuracy: 78.0% / Precision: 54.5% / Recall: 27.5%)
+- Random Forest (Accuracy: 88.3% / Precision: 78.3% / Recall: 68.0%)
+- Neural Networks (Accuracy: 88.1% / Precision: 76.9% / Recall: 69.2%)
+- Logistic Regression (Accuracy: 84.9% / Precision: 70.8% / Recall: 58.7%)
+- Support Vector Machine (Accuracy: 82.9% / Precision: 71.2% / Recall: 42.7%)
+- SGD Classifier (Accuracy: 82.5% / Precision: 67.4% / Recall: 46.8%)
 
 And the first three classifiers are optimized by finding the optimal combinations of hyperparameters through grid search. After the optimization process, the classifiers are improved as follows: 
 
 - XGBoost (Accuracy: 90.8% / Precision: 80.9% / Recall: 78.6%)
 - Random Forest (Accuracy: 89.6% / Precision: 79.5% / Recall: 74.1%)
-- Neural Networks (Accuracy: % / Precision: % / Recall: %) - In Progress
+- Neural Networks (Accuracy: 88.7% / Precision: 76.6% / Recall: 73.0%)
 
+By combining XGBoost and Random Forest using soft voting, the following result is obtained: 
+
+- Soft Voting (Accuracy: 90.7% / Precision: 81.1% / Recall: 77.5%)
+
+Lastly, the below feature importance plots indicate that both XGBoost and random forest have the same order of feature importances. The weekday features come on top followed by the price ranges, and types of restaurants. However, the the score of each feature is different.
+
+![](Image/feature_importance.png "result")
 
 
 -----
