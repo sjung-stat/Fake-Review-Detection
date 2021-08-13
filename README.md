@@ -71,7 +71,7 @@ By combining XGBoost and Random Forest using soft voting, the following result i
 
 Lastly, the below feature importance plots indicate that both XGBoost and random forest have the same order of feature importances. The weekday features come on top followed by the price ranges, and types of restaurants. However, the the score of each feature is different.
 
-![](Image/feature_importance.png "result")
+![](Image/feature_importance_plot.jpg "result")
 
 
 -----
