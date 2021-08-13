@@ -69,6 +69,11 @@ By combining XGBoost and Random Forest using soft voting, the following result i
 
 - Soft Voting (Accuracy: 90.7% / Precision: 81.1% / Recall: 77.5%)
 
+In conclusion, after the hyperparameter tuning process, XGBoost produces the best result in all three metrics (accuracy, precision, and recall), followed by random forest, and neural network. The performance of the classifiers can be further improved by finding more optimal combinations of hyperparameters.
+
+XGBoost and the soft voting classifier have very similar results, so either one can be the final model. However, if you care more about precision rate than accuracy and recall rate, soft voting classifier can be used as it has slightly higher precision rate.
+
+
 Lastly, the below feature importance plots indicate that both XGBoost and random forest have the same order of feature importances. The weekday features come on top followed by the price ranges, and types of restaurants. However, the the score of each feature is different.
 
 ![](Image/feature_importance_plot.jpg "result")
